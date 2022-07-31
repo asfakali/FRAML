@@ -2,8 +2,8 @@
 
 
 
-|    Dataset | Model | arc_res50 | ~ | arc\_mbv2 | ~ |
-| ------- | --- | --- |-----| ------- | --- | --- |
+|    Dataset | Model | arc_res50  | arc_mbv2 |
+| ------- | --- | --- |-----| ------- | --- |
 |        | Similarity function | FALSE | TRUE | FALSE | TRUE |
 |        LWF\cite{3} | diff | 99.42 | 99.30 | 99.10 | 98.88 |
 |        | corr | 99.42 | 99.23 | 99.20 | 98.98 |
