@@ -1,4 +1,4 @@
-# [arcface-tf2](https://github.com/peteryuX/arcface-tf2)
+# [A Feature Representation Technique for Angular Margin Loss](https://github.com/peteryuX/arcface-tf2)
 
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/peteryuX/arcface-tf2.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/peteryuX/arcface-tf2/context:python)
 ![Star](https://img.shields.io/github/stars/peteryuX/arcface-tf2)
@@ -11,9 +11,9 @@
 
 >  This work proposes a straightforward yet effective feature representation approach for the angular margin loss (Arc) feature. The representation approach makes it possible to detect similarities between distinct characteristics, which is particularly beneficial for many computer vision problems such as face recognition and object tracking. We offer what is perhaps the most comprehensive experimental evaluation of the most recent state-of-the-art face recognition algorithms, ArcFace, using three face recognition benchmarks.
 
-Original Paper: &nbsp; [Arxiv](https://arxiv.org/abs/1801.07698) &nbsp; [ICICV2022](https://link.springer.com/chapter/10.1007/978-981-99-2602-2_7)
+Original Paper: [ICICV2022](https://link.springer.com/chapter/10.1007/978-981-99-2602-2_7)
 
-Offical Implementation: &nbsp; [MXNet](https://github.com/deepinsight/insightface)
+Offical Implementation: &nbsp; [ArcFace]([https://github.com/deepinsight/insightface](https://github.com/peteryuX/arcface-tf2))
 
 <img src="photo/architecture.JPG">
 
