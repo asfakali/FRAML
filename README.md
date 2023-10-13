@@ -15,8 +15,6 @@ Original Paper: [ICICV2022](https://link.springer.com/chapter/10.1007/978-981-99
 
 Offical Implementation: &nbsp; [ArcFace]([https://github.com/deepinsight/insightface](https://github.com/peteryuX/arcface-tf2))
 
-<img src="photo/architecture.JPG">
-
 ****
 
 ## Contents
@@ -146,7 +144,7 @@ python train.py --mode="fit" --cfg_path="./configs/arc_res50.yaml"
 You can download my trained models for testing from [Benchmark and Models](#Benchmark-and-Models) without training it yourself. And, evaluate the models you got with the corresponding cfg file on the testing dataset. The testing code in [./modules/evaluations.py](https://github.com/peteryuX/arcface-tf2/blob/master/modules/evaluations.py) were modified from [face.evoLVe](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch).
 
 ```bash
-python test.py --cfg_path="./configs/arc_res50.yaml"
+!python test.py --cfg_path="./configs/arc_mbv2_ccrop.yaml" --sim "ssim"
 ```
 
 ### Encode Input Image
