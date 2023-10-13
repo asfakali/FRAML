@@ -7,11 +7,11 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/peteryuX/arcface-tf2/blob/master/notebooks/colab-github-demo.ipynb)
 
-:fire: ArcFace (Additive Angular Margin Loss for Deep Face Recognition, published in CVPR 2019) implemented in Tensorflow 2.0+. This is an unofficial implementation. :fire:
+:fire: A Feature Representation Technique for Angular Margin Loss :fire:
 
->  Additive Angular Margin Loss(ArcFace) has a clear geometric interpretation due to the exact correspondence to the geodesic distance on the hypersphere, and consistently outperforms the state-of-the-art and can be easily implemented with negligible computational overhead.
+>  This work proposes a straightforward yet effective feature representation approach for the angular margin loss (Arc) feature. The representation approach makes it possible to detect similarities between distinct characteristics, which is particularly beneficial for many computer vision problems such as face recognition and object tracking. We offer what is perhaps the most comprehensive experimental evaluation of the most recent state-of-the-art face recognition algorithms, ArcFace, using three face recognition benchmarks.
 
-Original Paper: &nbsp; [Arxiv](https://arxiv.org/abs/1801.07698) &nbsp; [CVPR2019](http://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html)
+Original Paper: &nbsp; [Arxiv](https://arxiv.org/abs/1801.07698) &nbsp; [ICICV2022](https://link.springer.com/chapter/10.1007/978-981-99-2602-2_7)
 
 Offical Implementation: &nbsp; [MXNet](https://github.com/deepinsight/insightface)
 
