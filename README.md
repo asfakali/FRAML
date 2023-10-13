@@ -1,7 +1,7 @@
 # [A Feature Representation Technique for Angular Margin Loss]([https://github.com/peteryuX/arcface-tf2](https://github.com/asfakali/FRAML.git))
 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/peteryuX/arcface-tf2/blob/master/notebooks/colab-github-demo.ipynb](https://colab.research.google.com/drive/1f_rDNAHdsDz-0M7EXBn1fUb7WBgqJB8K))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1f_rDNAHdsDz-0M7EXBn1fUb7WBgqJB8K))
 
 :fire: A Feature Representation Technique for Angular Margin Loss :fire:
 
