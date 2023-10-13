@@ -1,11 +1,7 @@
-# [A Feature Representation Technique for Angular Margin Loss](https://github.com/peteryuX/arcface-tf2)
+# [A Feature Representation Technique for Angular Margin Loss]([https://github.com/peteryuX/arcface-tf2](https://github.com/asfakali/FRAML.git))
 
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/peteryuX/arcface-tf2.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/peteryuX/arcface-tf2/context:python)
-![Star](https://img.shields.io/github/stars/peteryuX/arcface-tf2)
-![Fork](https://img.shields.io/github/forks/peteryuX/arcface-tf2)
-![License](https://img.shields.io/github/license/peteryuX/arcface-tf2)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/peteryuX/arcface-tf2/blob/master/notebooks/colab-github-demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/peteryuX/arcface-tf2/blob/master/notebooks/colab-github-demo.ipynb](https://colab.research.google.com/drive/1f_rDNAHdsDz-0M7EXBn1fUb7WBgqJB8K))
 
 :fire: A Feature Representation Technique for Angular Margin Loss :fire:
 
@@ -33,8 +29,8 @@ Create a new python virtual environment by [Anaconda](https://www.anaconda.com/)
 
 ### Clone this repo
 ```bash
-git clone https://github.com/peteryuX/arcface-tf2.git
-cd arcface-tf2
+git clone https://github.com/asfakali/FRAML.git
+cd FRAML
 ```
 
 ### Conda
@@ -122,7 +118,7 @@ test_dataset: '/your/path/to/test_dataset'
 ```
 
 Note:
-- The `sub_name` is the name of outputs directory used in checkpoints and logs folder. (make sure of setting it unique to other models)
+- The `sub_name` is the name of the outputs directory used in the checkpoints and logs folder. (make sure to set it unique to other models)
 - The `head_type` is used to choose [ArcFace](https://arxiv.org/abs/1801.07698) head or normal fully connected layer head for classification in training. (see more detail in [./modules/models.py](https://github.com/peteryuX/arcface-tf2/blob/master/modules/models.py#L90-L94))
 - The `is_ccrop` means doing central-cropping on both trainging and testing data or not.
 - The `binary_img` is used to choose the type of training data, which should be according to the data type you created in the [Data-Preparing](#Data-Preparing).
@@ -146,41 +142,23 @@ You can download my trained models for testing from [Benchmark and Models](#Benc
 ```bash
 !python test.py --cfg_path="./configs/arc_mbv2_ccrop.yaml" --sim "ssim"
 ```
-
+Note:
+ - ```--sim``` is used for similarity measure. "ssim" for Structural Similarity Index Measure(SSIM), "diff" for normal difference, "corr" for cross-correlation. "fft_corr" for Fourier domain cross-correlation, "cos" cosine similarity. 
 ### Encode Input Image
 
 You can also encode image into latent vector by model. For example, encode the image from [./data/BruceLee.jpg](https://github.com/peteryuX/arcface-tf2/blob/master/data/BruceLee.jpg) and save to `./output_embeds.npy` as following.
 
 ```bash
-python test.py --cfg_path="./configs/arc_res50.yaml" --img_path="./data/BruceLee.jpg"
+python test.py --cfg_path="./configs/arc_res50.yaml" --img_path="./data/BruceLee.jpg" --sim "ssim"
 ```
 
-****
-
-## Benchmark and Models
-:coffee:
-
-Verification results (%) of different backbone, head tpye, data augmentation and loss function.
-
-| Backbone | Head | Loss | CCrop | LFW | AgeDB-30 | CFP-FP | Download Link |
-|----------|------|------|-------|-----|--------|----------|---------------|
-| [ResNet50](https://arxiv.org/abs/1512.03385) | [ArcFace](https://arxiv.org/abs/1801.07698) | Softmax | False | 99.42 | 95.32  |  92.56   | [GoogleDrive](https://drive.google.com/file/d/1HasWQb86s4xSYy36YbmhRELg9LBmvhvt/view?usp=sharing) |
-| [MobileNetV2](https://arxiv.org/abs/1801.04381) | [ArcFace](https://arxiv.org/abs/1801.07698) | Softmax | False | 99.13 | 91.62  |  91.50   | [GoogleDrive](https://drive.google.com/file/d/1qG8BChcPHzKuGwjJhrpeIxBqQmhpLvTX/view?usp=sharing) |
-| [ResNet50](https://arxiv.org/abs/1512.03385) | [ArcFace](https://arxiv.org/abs/1801.07698) | Softmax | True | 99.38 | 95.13 | 94.87 | [GoogleDrive](https://drive.google.com/file/d/1zUulC-4hSY_kPqZpcoIHO96OmjMivuKB/view?usp=sharing) |
-| [MobileNetV2](https://arxiv.org/abs/1801.04381) | [ArcFace](https://arxiv.org/abs/1801.07698) | Softmax | True | 98.88 | 91.58 | 93.19 | [GoogleDrive](https://drive.google.com/file/d/1nSnIc0eV0MkSjg48x29PJwTt3fGXKDU4/view?usp=sharing) |
-
-Note:
-- The 'CCrop' tag above means doing central-cropping on both trainging and testing data, which could eliminate the redundant boundary of intput face data (especially for AgeDB-30).
-- All training settings of the models can be found in the corresponding [./configs/*.yaml](https://github.com/peteryuX/arcface-tf2/tree/master/configs) files.
-- **Based on the property of the training dataset, all the pre-trained models can only be used for non-commercial applications.**
-
-****
 
 ## References
 :hamburger:
 
 Thanks for these source codes porviding me with knowledges to complete this repository.
 
+- Face Analysis Project on tf2 https://github.com/peteryuX/arcface-tf2
 - https://github.com/deepinsight/insightface/tree/master/recognition (Official)
     - Face Analysis Project on MXNet http://insightface.ai
 - https://github.com/zzh8829/yolov3-tf2
